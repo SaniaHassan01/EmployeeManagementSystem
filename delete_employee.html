@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Employee</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h2>Delete Employee</h2>
+    </div>
+
+    <div class="container">
+        <form id="deleteEmployeeForm">
+            <label>Enter Employee ID to Delete:</label>
+            <input type="text" id="deleteEmpCode" required>
+            <button type="button" onclick="deleteEmployee()">Delete</button>
+        </form>
+
+        <!-- Success message (Initially hidden) -->
+        <div id="deleteSuccessMessage" class="message-box" style="display: none;">
+            <p>Employee details deleted successfully!</p>
+            <button onclick="returnToMenu()">Return to Main Menu</button>
+        </div>
+
+        <!-- Main Menu Button -->
+        <!-- <button class="main-menu-btn" onclick="returnToMenu()">Return to Main Menu</button> -->
+    <!-- </div> -->
+</body>
+</html>
+

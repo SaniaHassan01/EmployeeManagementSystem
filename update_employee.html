@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Employee</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Update Employee</h2>
+    <form id="updateEmployeeForm">
+        <label>Employee Code:</label>
+        <input type="text" id="searchEmpCode" required>
+        <button type="button" onclick="searchEmployee()">Search</button>
+
+        <div id="updateSection" style="display:none;">
+            <label>Employee Name:</label>
+            <input type="text" id="updateEmpName">
+            
+            <label>Position:</label>
+            <input type="text" id="updateEmpPosition">
+            
+            <label>Salary:</label>
+            <input type="number" id="updateEmpSalary">
+            
+            <label>Joining Date:</label>
+            <input type="date" id="updateEmpDate">
+            
+            <label>Status:</label>
+            <select id="updateEmpStatus">
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <button type="submit">Update Employee</button>
+        </div>
+    </form>
+
+    <!-- Success message (Hidden initially) -->
+    <div id="updateSuccessMessage" class="message-box" style="display: none;">
+        <p>Employee details updated successfully!</p>
+        <button onclick="returnToMenu()">Return to Main Menu</button>
+    </div>
+</body>
+</html>
+
